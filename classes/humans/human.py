@@ -9,6 +9,8 @@ class Human(Player):
   def attack ( self , victim, weapon = False ):
     return super().attack( victim, weapon)
 
-  def show_stats( self ):
-    super().show_stats()
+  def show_stats(self):
+    print(f"{self.total_humans} Humans left \n Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\nIsLiving: {self.isLiving}\n")
 
+
+# print(f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\nIsLiving: {self.isLiving}\n")

@@ -5,7 +5,7 @@ from classes import player
 michelangelo = ninja.Ninja("Michelanglo")
 jack_sparrow = pirate.Pirate("Jack Sparrow")
 gandalf = wizard.Wizard("Gandalf")
-print(gandalf)
+# print(gandalf)
 gollum = ghoul.Ghoul("Gollum")
 lich_king = zombie.Zombie("Lich King")
 # jack_sparrow.show_stats()

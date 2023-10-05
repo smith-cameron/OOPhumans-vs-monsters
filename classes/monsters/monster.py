@@ -9,5 +9,6 @@ class Monster(Player):
   def attack ( self , victim, weapon = False ):
     return super().attack( victim, weapon)
 
-  def show_stats( self ):
-    super().show_stats()
+  def show_stats(self):
+    print(f"{self.total_monsters} Monsters left \n Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\nIsLiving: {self.isLiving}\n")
+

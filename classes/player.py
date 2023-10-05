@@ -5,7 +5,8 @@ class Player:
         self.isLiving = True
 
     def show_stats( self ):
-        print(f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\nIsLiving: {self.isLiving}\n")
+        raise NotImplementedError
+        
 
     def attack ( self , victim, weapon = False ):
         if self.can_attack(self):
@@ -17,6 +18,11 @@ class Player:
                 if victim.health <= 0:
                     victim.isLiving = False
                     print(f"{self.name} is the victor over {victim.name}.\n")
+                    if self.total_monsters:
+
+                        print(self.total_monsters)
+                    else:
+                        print(self.total_humans)
             else:
                 print(f"Dont kick a dead {victim.name}.\n")
         else:
